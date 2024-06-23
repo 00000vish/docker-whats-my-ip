@@ -1,37 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>What's My Ip?</title>
     <style>
-        body{
-          background-color: black;
-          font-size: xx-large;
-          color: red;
-        }
-        .center {
-          margin: 0;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
+      body {
+        background-color: black;
+        font-size: xx-large;
+        color: red;
+      }
+      .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     </style>
   </head>
   <body>
     <div class="center">
-      <p id="myIp">hello</p>
+      <p id="myIp">Checking...</p>
     </div>
-	  <script>
-        async function main(){
-          async function getIp() {
-            const response = await fetch("http://localhost:3000/ip");
-            return await response.text();
-          }
-          var myIp = await getIp();
-          document.getElementById("myIp").innerHTML = myIp;
+    <script>
+      async function main() {
+        async function getIp() {
+          const response = await fetch("http://localhost:3000/ip");
+          return await response.text();
         }
-        main();
+        var myIp = await getIp();
+        document.getElementById("myIp").innerHTML = myIp;
+      }
+      main();
     </script>
   </body>
 </html>
