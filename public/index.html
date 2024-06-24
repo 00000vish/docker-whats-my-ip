@@ -25,7 +25,7 @@
     <script>
       async function main() {
         async function getIp() {
-          const response = await fetch("http://localhost:3000/ip");
+          const response = await fetch("/ip");
           return await response.text();
         }
         var myIp = await getIp();
