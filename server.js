@@ -1,6 +1,13 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 const port = 3000;
+
+var corsOptions = {
+  origin: `http://localhost:${port}`,
+};
+
+app.use(cors(corsOptions));
 
 const axios = require("axios");
 const path = require("path");
