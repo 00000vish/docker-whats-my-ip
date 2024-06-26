@@ -1,6 +1,6 @@
 # docker-network-whats-my-ip
 
-A container that you can add to your docker compose network which will serve static webpage with your docker networks public ip.
+A docker container that spins up a web-page with your docker networks public IP.
 
 # Docker Run
 
