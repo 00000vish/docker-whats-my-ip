@@ -1,6 +1,6 @@
 # docker-network-whats-my-ip
 
-A docker container that spins up a web-page with your docker networks public IP.
+A docker imaage that spins up a web-page with your docker networks public IP.
 
 # Docker Run
 
@@ -24,4 +24,4 @@ services:
 
 # Screenshot
 
-![Screenshot 2024-06-26 032817](https://github.com/00000vish/docker-whats-my-ip/assets/11762008/8c549f64-ada4-435c-944a-29e55038d228)
+![Screenshot](https://github.com/00000vish/docker-whats-my-ip/assets/11762008/8c549f64-ada4-435c-944a-29e55038d228)
