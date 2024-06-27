@@ -1,6 +1,6 @@
 # docker-network-whats-my-ip
 
-A docker imaage that spins up a web-page with your networks public IP.
+A docker image that spins up a web-page with your networks public IP.
 
 # Docker Run
 
