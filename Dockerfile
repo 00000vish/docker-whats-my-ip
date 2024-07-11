@@ -1,7 +1,5 @@
 FROM node:current-alpine3.19
 
-ENV PORT=3000
-
 WORKDIR /server
 COPY public ./public
 COPY package.json ./package.json
@@ -11,4 +9,4 @@ RUN npm install
 
 CMD ["npm", "run" ,"server"]
 
-EXPOSE $PORT
+EXPOSE ${PORT}
