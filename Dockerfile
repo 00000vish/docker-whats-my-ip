@@ -11,5 +11,3 @@ COPY server.js ./server.js
 RUN npm install
 
 CMD ["npm", "run" ,"server"]
-
-EXPOSE ${PORT}
