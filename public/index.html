@@ -25,8 +25,12 @@
     <script>
       async function main() {
         async function getIp() {
-          const response = await fetch("/ip");
-          return await response.text();
+          try{
+            const response = await fetch("/ip");
+            return await response.text();
+          }catch(error){
+            return error.message;
+          }
         }
         var myIp = await getIp();
         document.getElementById("myIp").innerHTML = myIp;
