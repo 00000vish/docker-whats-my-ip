@@ -20,6 +20,7 @@ app.get("/ip", async (_, res) => {
     var ifconfigRes = await axios.get("https://ifconfig.co/", options);
     res.send(ifconfigRes.data);
   } catch (error) {
+    console.log(error);
     res.send(error.message);
   }
 });

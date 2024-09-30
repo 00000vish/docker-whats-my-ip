@@ -29,6 +29,7 @@
             const response = await fetch("/ip");
             return await response.text();
           }catch(error){
+            console.log(error);
             return error.message;
           }
         }
